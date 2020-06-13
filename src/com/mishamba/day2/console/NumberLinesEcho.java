@@ -1,18 +1,17 @@
 package com.mishamba.day2.console;
 
-import java.util.Random;
+import java.util.ArrayList;
 
 public class NumberLinesEcho {
-    public void numberLinesEcho(int oneLine, int newLine) {
-        Random generator = new Random();
-        for (int i = 0; i < oneLine; i++) {
-            System.out.print(generator.nextInt() + " ");
+    public void echoInLine(ArrayList<Integer> numbers) {
+        for (Integer number : numbers) {
+            System.out.print(number + " ");
         }
+    }
 
-        System.out.print("\n");
-
-        for (int i = 0; i <newLine; i++) {
-            System.out.println(generator.nextInt());
+    public void echoWithNewLine(ArrayList<Integer> numbers) {
+        for (Integer number : numbers) {
+            System.out.println(number);
         }
     }
 }

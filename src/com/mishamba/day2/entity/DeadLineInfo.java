@@ -12,7 +12,7 @@ public class DeadLineInfo {
     }
 
     public String toString() {
-        return String.format("developer name: %s, deadline: %t", developer
+        return String.format("developer name: %s, deadline: %s", developer
                 , deadLine.getTime());
     }
 }
