@@ -1,9 +1,11 @@
 package com.mishamba.day2.service;
 
 import java.util.Calendar;
+import com.mishamba.day2.exception.ProgramException;
+import com.mishamba.day2.validator.DateRangeValidator;
 
 public class BirthdayService {
-    public boolean isBirthday(Calendar birthday) {
+    public boolean isBirthday(Calendar birthday) throws ProgramException {
         Calendar today = Calendar.getInstance();
         boolean equalDays = (today.get(Calendar.DAY_OF_MONTH) == 
                 birthday.get(Calendar.DAY_OF_MONTH));

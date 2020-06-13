@@ -7,6 +7,7 @@ public class NumberLinesEcho {
         for (Integer number : numbers) {
             System.out.print(number + " ");
         }
+        System.out.print("\n");
     }
 
     public void echoWithNewLine(ArrayList<Integer> numbers) {

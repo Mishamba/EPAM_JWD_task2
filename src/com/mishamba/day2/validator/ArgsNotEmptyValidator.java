@@ -1,7 +1,11 @@
 package com.mishamba.day2.validator;
 
 public class ArgsNotEmptyValidator {
+    public boolean countOfArgs(String[] args, int count) {
+        return (args.length == count);
+    }
+
     public boolean empty(String[] args) {
-        return (args.length != 0);
+        return (args.length == 0);
     }
 }
